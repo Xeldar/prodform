@@ -36,10 +36,12 @@ class ProdformExtension extends SimpleExtension
     {
         $config = $this->getConfig();
         $data = $event->getData();
+
         if(isset($data->_fields['upload'])) {
             $uploadField = $data->_fields['upload'];
             $maxSize = $config['prodform']['maxisze'];
             $authExt = $config['prodform']['extentions'];
+
             $ext = strtolower(pathinfo($uploadField->getClientOriginalName(),PATHINFO_EXTENSION));
             $fileSize = filesize($uploadField->getPathName());
 
