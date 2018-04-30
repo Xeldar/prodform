@@ -1,0 +1,3 @@
+prodform:
+    extentions: [ jpg, jpeg, png, doc, docx, ppt, pptx, xls, xlsx ]
+    maxisze: 10485760

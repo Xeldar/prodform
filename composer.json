@@ -1,0 +1,39 @@
+{
+    "name": "prod/prodform",
+    "description": "A boltforms extention to restrict file extension and file size",
+    "type": "bolt-extension",
+    "keywords": [
+        "foo",
+        "bar"
+    ],
+    "require": {
+        "bolt/bolt": "^3.0",
+        "bolt/boltforms": "^4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre AMIAUD",
+            "email": "alexandre.amiaud@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Extension\\Prod\\Prodform\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bolt\\Extension\\Prod\\Prodform\\Tests\\": "tests",
+            "Bolt\\Tests\\": "vendor/bolt/bolt/tests/phpunit/unit/"
+        }
+    },
+    "extra": {
+        "bolt-class": "Bolt\\Extension\\Prod\\Prodform\\ProdformExtension"
+    }
+}
